@@ -4,6 +4,12 @@ public class Exercicio{
 
 	public static void main (String [] args){
 		
+/*
+ * Não faz sentido a criação de cinco vetores.
+ * Peço que observe as correções desse exercício no repositório da disciplina. Observe que 
+ * as soluções propostas são mais simples.
+ * Nota 8,0
+ */
 		int triangulo1[]= new int[3] ;
 		int triangulo2[]= new int[3] ;
 		int triangulo3[]= new int[3] ;
@@ -40,6 +46,9 @@ public class Exercicio{
 	}
 
 	public static int verificarTriangulo(int triangulo[],int c){
+/* Evite o uso de comandos de saída dentro de funções e métodos que não são 
+ * de interação com o usuário.
+ */
 		int x=triangulo[0],y=triangulo[1],z=triangulo[2];
 		if(x+y>z && x+z>y && y+z>x){
 			if (x==y && x==z)
