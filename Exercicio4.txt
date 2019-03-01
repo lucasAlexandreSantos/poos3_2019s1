@@ -1,0 +1,73 @@
+public class Exercicio4{
+
+	public static void main(String args[]){
+	
+	Calculadora calc = new Calculadora(0);
+
+	System.out.println(calc.calcular(5,"+"));
+	System.out.println(calc.calcular(5,"*"));
+	System.out.println(calc.calcular(5,"-"));
+	calc.limparMemoria();
+	System.out.println(calc.calcular(5,"-"));
+	
+		
+	
+	
+	
+	}
+}
+
+public class Calculadora{
+		
+	int valorInicial;
+		
+	public Calculadora(int valorInicial){
+			
+		this.valorInicial=valorInicial;	
+	}	
+		
+	private int somar(int n){
+			
+		return this.valorInicial=this.valorInicial+n;	
+			
+	}
+	private int subtrair(int n){
+		return this.valorInicial=this.valorInicial-n;		
+			
+	}	
+	private int multiplciar(int n){
+		return this.valorInicial=this.valorInicial*n;		
+			
+			
+	}
+	private int dividir(int n){
+			
+		return this.valorInicial=this.valorInicial/n;		
+			
+	}
+	
+	public int calcular(int operando,String operador){
+		
+		if(operador == "+"){
+			this.valorInicial=somar(operando);
+		}
+		else if (operador == "-"){
+			this.valorInicial=subtrair(operando);
+		}
+		else if (operador == "*"){
+			this.valorInicial=multiplciar(operando);
+		}
+		else if (operador == "/"){
+			this.valorInicial=dividir(operando);
+		}
+			
+		return this.valorInicial;
+	
+	}
+	
+	public void limparMemoria(){
+		
+		this.valorInicial=0;	
+	}	
+	
+}
