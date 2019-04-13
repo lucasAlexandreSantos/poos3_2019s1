@@ -1,5 +1,17 @@
 import java.util.Scanner;
 
+/*
+    1. Um mesmo arquivo não pode conter duas classes públicas.
+    2. Da forma como foi implementado, utiliza-se um tipo double para as operações de soma e subtração.
+    3. Uso inadequado do conceito de encapsulamento.
+
+    Esperava-se a implementação de uma classe que represente um valor monetário, objetos dessa classe 
+    fariam as operações de soma e subtração considerando as características dos objetos.
+
+    Nota: 2.
+
+*/
+
 public class Exercicio3{
 
 	public static void main (String args[]){
