@@ -71,3 +71,7 @@ public class Calculadora{
 	}	
 	
 }
+
+Por que enviar um arquivo .txt? Onde estão as classes java?
+Não existe divisão por zero, o método calcular recebe um char não String. O valor inicial da calculadora sempre é zero.
+Nota 3
